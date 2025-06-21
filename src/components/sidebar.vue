@@ -3,12 +3,11 @@
 <template>
   <div class="container">
     <div class="sidebar">
-      <h2>Navigation</h2>
+      <h2>Know Your Cow</h2>
       <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Profil</a></li>
-        <li><a href="#">Paramètres</a></li>
-        <li><a href="#">Déconnexion</a></li>
+        <li><a href="Acceuil">Accueil</a></li>
+        <li><a href="Quizz">Quizz</a></li>
+        <li><a href="Wiki">Wiki</a></li>
       </ul>
     </div>
     <div class="content">
@@ -25,8 +24,8 @@
 
 .sidebar {
   width: 200px;
-  background-color: #333;
-  color: white;
+  background-color: hsl(0, 0%, 23%);
+  color: #000000;
   padding: 1rem;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .sidebar a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -50,6 +49,6 @@
 
 .content {
   flex: 1;
-  padding: 1rem;
+  padding: 15rem;
 }
 </style>
