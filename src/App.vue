@@ -1,20 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import mainvue from './components/main.vue'
+import sidebar from './components/sidebar.vue';
+//import HelloWorld from './components/HelloWorld.vue'
+//import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <sidebar />
+    
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      HI
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    
+    <mainvue />
   </main>
+  <footer>
+<img alt="logo" class="logo" src="./assets/logo_texte.svg" width="250" height="250" />
+
+  </footer>
 </template>
 
 <style scoped>
