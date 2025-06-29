@@ -1,27 +1,18 @@
 <script setup>
-import mainvue from './components/main.vue'
-import sidebar from './components/sidebar.vue';
+import Sidebar from '@/components/Sidebar.vue'
+//import router-view from './router/index.js'
 //import HelloWorld from './components/HelloWorld.vue'
 //import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <sidebar />
-    
-    <div class="wrapper">
-      HI
-    </div>
-  </header>
+  <div class="layout">
+    <Sidebar />
+    <main>
+      <router-view />
 
-  <main>
-    
-    <mainvue />
-  </main>
-  <footer>
-<img alt="logo" class="logo" src="./assets/logo_texte.svg" width="250" height="250" />
-
-  </footer>
+    </main>
+  </div>
 </template>
 
 <style scoped>

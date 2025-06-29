@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Accueil from '../views/main.vue'
-import Quizz from '../views/Quizz.vue'
-import Wiki from '../views/Wiki.vue'
+import Accueil from '../components/Home.vue'
+import Quizz from '../components/Quizz.vue'
+import Wiki from '../components/Wiki.vue'
 
 
 const routes = [

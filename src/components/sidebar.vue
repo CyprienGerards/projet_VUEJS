@@ -5,13 +5,10 @@
     <div class="sidebar">
       <h2>Know Your Cow</h2>
       <ul>
-        <li><a href="Acceuil">Accueil</a></li>
-        <li><a href="Quizz">Quizz</a></li>
-        <li><a href="Wiki">Wiki</a></li>
+        <li><router-link to="/">Accueil</router-link></li>
+        <li><router-link to="/quizz">Quizz</router-link></li>
+        <li><router-link to="/wiki">Wiki</router-link></li>
       </ul>
-    </div>
-    <div class="content">
-      <router-view />
     </div>
   </div>
 </template>
