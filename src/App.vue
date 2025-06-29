@@ -8,7 +8,7 @@ import Sidebar from '@/components/Sidebar.vue'
 <template>
   <div class="layout">
     <Sidebar />
-    <main>
+    <main class="main-content">
       <router-view />
 
     </main>
@@ -16,30 +16,18 @@ import Sidebar from '@/components/Sidebar.vue'
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.main-content {
+  flex: 1;
+  padding:  3rem 4rem;
+  background-color: #1e1e1e;
+  color: white;
+  overflow-y: auto;
 }
 </style>
