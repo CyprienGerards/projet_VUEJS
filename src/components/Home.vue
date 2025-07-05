@@ -37,7 +37,7 @@
 .home-text {
   max-width: 1000px;
   margin: 0 auto;
-  line-height: 3.8;
+  line-height: 2.8;
   font-size: 1.5rem;
 }
 
