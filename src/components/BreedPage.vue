@@ -1,42 +1,46 @@
 <script setup>
 import { useRoute } from 'vue-router'
+import breedData from '@/data/breeds.json'
 
 const route = useRoute()
-const breedName = route.params.breed // récupère le nom depuis l'URL
-
-// 📦 Tu peux plus tard charger les vraies données depuis un JSON ou une API
-const breeds = {
-  holstein: {
-    name: 'Holstein-Friesian',
-    image: '/breeds/Holstein.jpg',
-    origin: 'Netherlands',
-    type: 'Dairy',
-    description: 'Holsteins are known for their high milk production and iconic black and white coat.',
-  },
-  angus: {
-    name: 'Angus',
-    image: '/breeds/angus.jpg',
-    origin: 'Scotland',
-    type: 'Beef',
-    description: 'Angus cattle are popular for their high-quality, marbled beef and ease of handling.',
-  },
-  // ... ajoute d'autres races ici
-}
-
-const breed = breeds[breedName.toLowerCase()]
+const breed = breedData[route.params.breed?.toLowerCase()]
 </script>
 
 <template>
   <div v-if="breed" class="breed-page">
     <h2>{{ breed.name }}</h2>
-    <img :src="breed.image" :alt="breed.name" class="breed-image" />
-    
+
+    <div class="image-gallery">
+      <img
+        v-for="(img, index) in breed.images"
+        :key="index"
+        :src="img"
+        :alt="breed.name + ' image ' + (index + 1)"
+        class="breed-image"
+      />
+    </div>
+
     <ul class="breed-info">
       <li><strong>Origin:</strong> {{ breed.origin }}</li>
       <li><strong>Type:</strong> {{ breed.type }}</li>
     </ul>
 
-    <p class="breed-desc">{{ breed.description }}</p>
+    <section v-if="breed.traits?.length">
+      <h3>Key Traits</h3>
+      <ul>
+        <li v-for="(trait, i) in breed.traits" :key="i">{{ trait }}</li>
+      </ul>
+    </section>
+
+    <section class="breed-description">
+      <h3>Description</h3>
+      <p>{{ breed.description }}</p>
+    </section>
+
+    <section v-if="breed.history">
+      <h3>History</h3>
+      <p>{{ breed.history }}</p>
+    </section>
   </div>
 
   <div v-else>
@@ -49,12 +53,17 @@ const breed = breeds[breedName.toLowerCase()]
   max-width: 800px;
   padding: 2rem 1rem;
 }
-
-.breed-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 1rem 0;
+}
+.breed-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 .breed-info {
@@ -64,11 +73,14 @@ const breed = breeds[breedName.toLowerCase()]
 }
 
 .breed-info li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.breed-desc {
-  font-size: 1.1rem;
-  line-height: 1.7;
+section {
+  margin-top: 2rem;
+}
+
+section h3 {
+  margin-bottom: 0.5rem;
 }
 </style>

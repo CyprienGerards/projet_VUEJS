@@ -1,0 +1,23 @@
+{
+  "holstein": {
+    "name": "Holstein-Friesian",
+    "images": [
+      "/breeds/Holstein.jpg",
+      "/breeds/holstein2.jpg"
+    ],
+    "origin": "Netherlands",
+    "type": "Dairy",
+    "description": "Holsteins are the most productive dairy cows in the world. They originated in the Netherlands...",
+    "traits": ["High milk yield", "Black & white coat", "Large frame"],
+    "history": "The Holstein breed has been developed over centuries in the Netherlands..."
+  },
+  "angus": {
+    "name": "Angus",
+    "images": ["/breeds/angus1.jpg"],
+    "origin": "Scotland",
+    "type": "Beef",
+    "description": "Angus cattle are prized for their marbled beef and docile temperament...",
+    "traits": ["Marbled beef", "No horns", "Hardy"],
+    "history": "Angus cattle originated in northeastern Scotland..."
+  }
+}
