@@ -8,6 +8,11 @@ const routes = [
   { path: '/', component: Accueil },
   { path: '/Quizz', component: Quizz },
   { path: '/Wiki', component: Wiki },
+  {
+  path: '/wiki/:breed',
+  name: 'BreedPage',
+  component: () => import('@/components/BreedPage.vue')
+  }
 ]
 
 const router = createRouter({
