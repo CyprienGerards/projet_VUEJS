@@ -25,7 +25,10 @@ import Sidebar from '@/components/Sidebar.vue'
 
 .main-content {
   flex: 1;
-  padding:  3rem 4rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: #1e1e1e;
   color: white;
   overflow-y: auto;

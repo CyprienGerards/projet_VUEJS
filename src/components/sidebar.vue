@@ -36,12 +36,12 @@
 }
 
 .logo {
-  max-width: 120px;    /* 🔧 shrink logo */
+  max-width: 200px;    /* 🔧 shrink logo */
   height: auto;
 }
 
 h2 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 ul {
@@ -50,6 +50,7 @@ ul {
 }
 
 li {
+  font-size: 1.5rem;
   margin: 1rem 0;
 }
 
