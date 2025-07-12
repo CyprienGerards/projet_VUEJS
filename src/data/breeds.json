@@ -2,22 +2,95 @@
   "holstein": {
     "name": "Holstein-Friesian",
     "images": [
-      "/breeds/Holstein.jpg",
-      "/breeds/holstein2.jpg"
+      "/breeds/Holstein.jpg"
     ],
     "origin": "Netherlands",
     "type": "Dairy",
-    "description": "Holsteins are the most productive dairy cows in the world. They originated in the Netherlands...",
-    "traits": ["High milk yield", "Black & white coat", "Large frame"],
-    "history": "The Holstein breed has been developed over centuries in the Netherlands..."
-  },
+    "description": "Holstein‑Friesians are the world’s most productive dairy cattle, producing over 23,000 lb (≈10 500 kg) of milk per lactation with an average fat content of 3.7%.\nThese large-framed cows are recognized by their bold piebald coats—usually black-and-white or red-and-white—with no two patterns alike.\nThey reach maturity around 680–770 kg and typically calve for the first time at around two years old, producing healthy calves weighing over 40 kg.\nSelective breeding and advanced techniques like artificial insemination and embryo transfer have increased milk yield dramatically since the 1960s.\nHolsteins thrive in diverse environments, from small family farms to large commercial operations, thanks to their adaptability and high dairy performance.",
+  "traits": ["Very high milk yield","Distinctive piebald coat","Large frame","Adaptable","High genetic potential"],
+  "history": "Developed over centuries in Friesland, these cattle merged the heavy black ‘Batavian’ and white ‘Friesian’ types to form today's Holstein.\nThey arrived in North America in the mid-1800s and continue to dominate dairy herds across the U.S., Canada, and Australia due to their unmatched production."
+},
   "angus": {
     "name": "Angus",
     "images": ["/breeds/angus1.jpg"],
     "origin": "Scotland",
     "type": "Beef",
-    "description": "Angus cattle are prized for their marbled beef and docile temperament...",
-    "traits": ["Marbled beef", "No horns", "Hardy"],
-    "history": "Angus cattle originated in northeastern Scotland..."
-  }
+    "description": "Angus cattle—also known as Aberdeen Angus—are medium-sized, naturally polled (hornless) beef cows, with a solid black (or red) coat.\nThey rose to prominence due to exceptional intramuscular marbling, producing tender and juicy meat highly valued in markets worldwide.\nIntroduced to the U.S. in the 1870s, Angus quickly became a staple breed after the American Angus Association was founded in 1883.\nRecent crossbreeding programs like Angus–Wagyu and Angus–Charolais combine Angus’ marbling with other breeds’ growth or resilience traits for premium beef products.\nTheir docile temperament, ease of calving, and adaptability to different climates make them a popular choice for sustainable and high-quality cattle farming.",
+  "traits": ["High marbling and tenderness", "Polled (hornless)", "Calving ease", "Docile temperament", "Adaptable to climates"],
+  "history": "Originating in northeastern Scotland, Angus cattle were selectively bred by farmers such as Hugh Watson and William McCombie.\nTheir dominance in the U.S. market grew after 1873, with breeding programs developing Certified Angus Beef for quality assurance."
+},
+  "jersey": {
+    "name": "Jersey",
+    "images": [
+      "/breeds/jersey1.jpg"
+    ],
+    "origin": "Isle of Jersey (Channel Islands)",
+    "type": "Dairy",
+    "description": "Jerseys are relatively small dairy cows known for producing exceptionally rich milk, with butterfat often over 5%.\nTheir coat colours range from light fawn to nearly black, often with a friendly expression and refined features.\nDespite their size, they have excellent feed conversion and efficiency, producing high-quality milk even on modest diets.\nTheir gentle temperament makes them well-suited for small-scale or family farming operations.\nSince the mid-1800s, Jersey exports have spread rapidly worldwide, especially in areas requiring quality milk rather than sheer volume.",
+  "traits": ["High butterfat milk", "Efficient feed conversion", "Gentle temperament", "Milk rich in protein"],
+  "history": "Native to the Isle of Jersey, isolated breeding until the 19th century fostered a distinct type.\nGlobal interest in high-quality dairy led to extensive export after 1850, especially to North America and Australasia."
+},
+  "limousin": {
+  "name": "Limousin",
+  "images": ["/breeds/limousin1.jpg", "/breeds/limousin2.jpg"],
+  "origin": "France",
+  "type": "Beef",
+  "description": "Limousin cattle are powerful, medium-to-large beef cattle originating from the rugged, rocky terrain of south-central France. They are known for their golden-red wheat colour and pale facial markings, making them visually distinctive. These cattle naturally mature quickly, producing lean, well-muscled carcasses that yield a high percentage of saleable meat. Their light bone structure and impressive feed-conversion efficiency have made them a top choice for modern beef production systems. In addition to beef, their natural horned lines and polled variants show adaptability and strong genetic development.",
+  "traits": ["High muscling", "Lean carcass", "Efficient feed conversion", "Adaptable to harsh environments", "Polled and horned lines"],
+  "history": "Bred in the Limousin and Marche regions for draught use and beef, a herd-book was established in 1886. Exported globally since the 1960s, they now thrive in 70+ countries, prized for crossbreeding programs that improve carcass yield and feed efficiency."
+},
+"belgian-blue": {
+  "name": "Belgian Blue",
+  "images": ["/breeds/belgian_blue1.jpg", "/breeds/belgian_blue2.jpg"],
+  "origin": "Belgium",
+  "type": "Beef",
+  "description": "Belgian Blue cattle are known worldwide for their dramatic ‘double-muscling’ physique—a result of a natural myostatin gene mutation that increases muscle fibre count. Their heavily muscled shoulders, loins, and rumps yield up to 85% carcass yield, making them extremely efficient for meat production. Despite their remarkable musculature, these cattle are generally calm and easy to handle, making them popular in both purebred and crossbreeding systems. However, purebred cows often require caesarean sections due to calf size, prompting many farmers to use Belgian Blau as terminal sires. They also offer short gestation periods and strong breeding performance in beef-on-dairy operations.",
+  "traits": ["Double-muscling", "High carcass yield", "Quiet temperament", "Short gestation interval", "Used as terminal sire"],
+  "history": "Formally recognized in 1973 after selective breeding in mid-20th-century Belgium, Belgian Blues quickly spread to Europe, North America, and beyond. Their genetic impact continues through crossbreeding programs aimed at maximizing lean meat output and farm profitability."
+},
+"charolais": {
+  "name": "Charolais",
+  "images": ["/breeds/charolais1.jpg", "/breeds/charolais2.jpg"],
+  "origin": "France",
+  "type": "Beef",
+  "description": "Charolais cattle are a large, muscular beef breed famed for their white or creamy coats and formidable size. They excel in growth rate and feed efficiency, producing heavy carcasses with excellent meat-to-bone ratio. Their temperament is typically docile, making them suitable for both pasture-based and feedlot systems. They also contribute strong hybrid vigor when crossed with other breeds, improving growth and carcass quality in offspring. Charolais cattle adapt well to various climates—from temperate to semi-arid regions—making them globally popular among beef producers.",
+  "traits": ["Large frame", "High feed efficiency", "Lean meat", "Docile temperament", "Hybrid vigor"],
+  "history": "Originating in Bourgogne and Charolais regions, the Charolais breed dates back to the 18th century and has been systematically selected for beef performance. They were one of the first European breeds exported to North America and Australia, where they remain a cornerstone of commercial beef operations."
+},
+"simmental": {
+  "name": "Simmental",
+  "images": ["/breeds/simmental1.jpg", "/breeds/simmental2.jpg"],
+  "origin": "Switzerland",
+  "type": "Dual-purpose",
+  "description": "Simmental cattle are a versatile breed known for both high milk production and quality beef, often showcasing red-and-white or gold-and-white coats. They are appreciated for their rapid growth and muscular build while maintaining excellent maternal qualities such as milk yield and fertility. Their docile nature and adaptability to various climates make Simmentals a favorite in crossbreeding programs worldwide. They are also used successfully in both pasture-based and intensive systems, producing consistent offspring performance. Simmentals are known for longevity and balanced production traits, offering farmers reliable returns over many years.",
+  "traits": ["Dual-purpose", "High fertility", "Balanced milk and meat", "Adaptable", "Calm disposition"],
+  "history": "Dating back to the Simme Valley in Switzerland, the Simmental breed expanded across Europe in the 19th century. With structured breeding programs and performance recording, they established a global presence in both dairy and beef industries."
+},
+"braunvieh": {
+  "name": "Braunvieh",
+  "images": ["/breeds/braunvieh1.jpg", "/breeds/braunvieh2.jpg"],
+  "origin": "Switzerland",
+  "type": "Dairy",
+  "description": "Braunvieh, or Brown Swiss, are strong dairy cattle valued for both milk quality and robustness. Their medium to large frames and solid brown coats have made them iconic among dual-purpose herds. They produce milk high in protein and butterfat, ideal for cheese and yogurt production. Renowned for their longevity, many Braunvieh cows remain productive for over ten years in the milking herd. The breed’s adaptability and resistance to cold weather and mountain terrain make them well-suited to a variety of farm environments.",
+  "traits": ["High protein milk", "Longevity", "Cold-hardy", "Robust build", "Dual-purpose"],
+  "history": "The Braunvieh breed stems from the Alpine valleys of Switzerland, with records dating back to the 15th century. Their reputation for productivity and strength led to global export in the early 20th century, where they influenced the development of the Brown Swiss breed internationally."
+},
+"texas-longhorn": {
+  "name": "Texas Longhorn",
+  "images": ["/breeds/texas_longhorn1.jpg", "/breeds/texas_longhorn2.jpg"],
+  "origin": "United States (American)",
+  "type": "Beef",
+  "description": "Texas Longhorns are legendary for their impressive horn span—commonly reaching over 6 feet—and their striking, multicolored hides. Descendants of Spanish cattle brought to the Americas in the 16th century, they survived as a feral population before being tamed by Texas ranchers. Known for their hardiness, they thrive on sparse forage, heat, and disease-prone landscapes. Their lean meat has lower cholesterol than many other breeds, appealing to health-conscious consumers. They also have excellent maternal instincts and calving ease, making them a favorite for low-input and ecological farming.",
+  "traits": ["Horn span", "Low-fat beef", "Hardy and disease-resistant", "Calving ease", "Efficient foragers"],
+  "history": "Texas Longhorns evolved in the American Southwest from cattle introduced by Spanish explorers. Their survival through extreme climates and range drove their reputation as iconic ranch animals. Conservation efforts in the 20th century helped re-establish the breed, and they remain a symbol of the American West."
+},
+  "highland": {
+  "name": "Highland",
+  "images": ["/breeds/highland1.jpg", "/breeds/highland2.jpg"],
+  "origin": "Scotland",
+  "type": "Beef",
+  "description": "Highland cattle are instantly recognizable by their long, draping double coat—comprising an oil-shedding outer layer and insulating undercoat—ideal for cold, wet climates. Their long horns curve outward, framing the head and protecting them in rough terrain. They produce richly flavored, lean beef while maintaining smaller frame sizes, which reduce feed requirements. Their calm, docile nature makes them accessible for both hobbyists and professional farmers. They also have a remarkable lifespan, often producing calves into their teens, making them valuable for heritage breeding.",
+  "traits": ["Double coat", "Lean, flavorful beef", "Cold climate adaptability", "Docile temperament", "Longevity"],
+  "history": "Highlands originated in the Scottish Highlands and Western Isles, with documented pedigrees tracing back over 1,000 years. Their resilience and hardy genetics have kept the breed thriving in some of the harshest agricultural environments."
+}
 }

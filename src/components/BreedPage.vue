@@ -50,8 +50,9 @@ const breed = breedData[route.params.breed?.toLowerCase()]
 
 <style scoped>
 .breed-page {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 2rem 1rem;
+  font-size: 1.5rem;
 }
 .image-gallery {
   display: flex;
