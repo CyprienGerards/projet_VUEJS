@@ -39,13 +39,36 @@ defineProps({
 
       <li><router-link to="/wiki/simmental">Simmental</router-link> – A dual-purpose breed used for both milk and meat, originating from Switzerland.</li>
 
-      <li><router-link to="/wiki/braunvieh">Braunvieh</router-link> – One of the oldest dairy breeds, strong and adaptable with a grey-brown coat.</li>
+      <li><router-link to="/wiki/brown-swiss">Brown Swiss</router-link> – One of the oldest dairy breeds, strong and adaptable with a grey-brown coat.</li>
 
       <li><router-link to="/wiki/belgian-blue">Belgian Blue</router-link> – Known for its extreme muscle mass (“double muscling”) and lean beef.</li>
 
       <li><router-link to="/wiki/texas-longhorn">Texas Longhorn</router-link> – Iconic for its massive curved horns and adaptability to harsh climates.</li>
 
       <li><router-link to="/wiki/highland">Highland</router-link> – A hardy Scottish breed with long hair and a calm nature, suited for rugged terrain.</li>
+      
+      <li><router-link to="/wiki/abondance">Abondance</router-link> – </li>
+      
+      <li><router-link to="/wiki/aubrac">Aubrac</router-link> – </li>
+      
+      <li><router-link to="/wiki/blonde-d-aquitaine">Blonde d'aquitaine</router-link> – </li>
+      
+      <li><router-link to="/wiki/montbeliarde">Montbeliarde</router-link> – </li>
+      
+      <li><router-link to="/wiki/normande">Normande</router-link> – </li>
+      
+      <li><router-link to="/wiki/vosgienne">Vosgienne</router-link> – </li>
+      
+      <li><router-link to="/wiki/salers">Salers</router-link> – </li>
+      
+      <li><router-link to="/wiki/hereford">Hereford</router-link> – </li>
+      
+      <li><router-link to="/wiki/galloway">Galloway</router-link> – </li>
+      
+      <li><router-link to="/wiki/brahman">Brahman</router-link> – </li>
+      
+      <li><router-link to="/wiki/shorthorn">Shorthorn</router-link> – </li>
+      
     </ul>
   </div>
   
