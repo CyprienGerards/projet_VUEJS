@@ -50,7 +50,7 @@ const breed = breedData[route.params.breed?.toLowerCase()]
 
 <style scoped>
 .breed-page {
-  max-width: 1000px;
+  max-width: 1500px;
   padding: 2rem 1rem;
   font-size: 1.5rem;
 }
@@ -62,22 +62,25 @@ const breed = breedData[route.params.breed?.toLowerCase()]
 }
 .breed-image {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
   border-radius: 8px;
   object-fit: cover;
 }
 
 .breed-info {
+  max-width: 1000px;
   list-style: none;
   padding: 0;
   margin-bottom: 1rem;
 }
 
 .breed-info li {
+  max-width: 1000px;
   margin-bottom: 0.5rem;
 }
 
 section {
+  max-width: 1000px;
   margin-top: 2rem;
 }
 
