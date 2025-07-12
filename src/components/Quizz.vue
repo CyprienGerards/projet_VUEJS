@@ -1,10 +1,12 @@
 <script setup>
-defineProps({
-  msg: {
-    type: String,
-    required: true,
-  },
-})
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function startQuizz() {
+  // Optional: setup logic here
+  router.push('/quizz/play');
+}
 </script>
 
 <template>
@@ -28,7 +30,7 @@ defineProps({
     </div>
     <div class="quizz-start">
       <h3>Ready to begin?</h3>
-      <button class="start-button" type="button">🎯 Start the Quizz</button>
+      <button class="start-button" type="button"  @click="startQuizz">🎯 Start the Quizz</button>
     </div>
   </div>
 </template>

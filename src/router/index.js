@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Accueil from '../components/Home.vue'
 import Quizz from '../components/Quizz.vue'
 import Wiki from '../components/Wiki.vue'
-
+import QuizzView from '../components/QuizzView.vue';
 
 const routes = [
   { path: '/', component: Accueil },
@@ -12,7 +12,8 @@ const routes = [
   path: '/wiki/:breed',
   name: 'BreedPage',
   component: () => import('@/components/BreedPage.vue')
-  }
+  },
+  { path: '/quizz/play', name: 'QuizzView', component: QuizzView }
 ]
 
 const router = createRouter({

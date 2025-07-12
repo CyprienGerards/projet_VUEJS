@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Holstein",
+    "image": "/breeds/Holstein.jpg"
+  },
+  {
+    "name": "Limousin",
+    "image": "/breeds/Limousin.jpg"
+  },
+  {
+    "name": "Highland",
+    "image": "/breeds/Highland.jpg"
+  }
+]
