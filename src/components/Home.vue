@@ -4,28 +4,27 @@
 <template>
   <div class="home-container">
     <div class="home-text">
-      <p>🐄 <strong>Welcome to Know Your Cow!</strong></p>
+      <img src="/fuck.png" alt="Logo" class="logo" />
+      <h1>🐄 <strong>{{ $t('home.title') }}</strong></h1>
 
       <p>
-        <strong>Know Your Cow</strong> is an interactive app designed to help you explore the fascinating world of cows.
-        Whether you're into farming, curious about nature, or just here to learn something new — you're in the right place!
+        <strong>Know Your Cow</strong> {{ $t('home.intro') }}
       </p>
 
-      <p>Here, you’ll find:</p>
+      <p>{{ $t('home.hereYouFindTitle') }}</p>
 
       <ul>
-        <li>🧠 An educational quiz to test your knowledge of breeds, diet, and traits.</li>
-        <li>📚 A full Wiki with detailed pages on various cow breeds, origins, and uses.</li>
-        <li>🐮 A simple, fun interface that makes learning engaging and enjoyable.</li>
+        <li>{{ $t('home.hereYouFindList1') }}</li>
+        <li>{{ $t('home.hereYouFindList2') }}</li>
+        <li>{{ $t('home.hereYouFindList3') }}</li>
       </ul>
 
       <p>
-        <strong>Why this project?</strong><br />
-        Because cows aren't just farm animals — they’re part of our environment, economy, and cultural identity.
-        This project aims to <em>educate</em>, <em>raise awareness</em>, and <em>celebrate</em> these amazing animals.
+        <strong>{{ $t('home.whyTitle') }}</strong><br />
+        {{ $t('home.whyBody') }}
       </p>
 
-      <p>👉 Start your journey by choosing a section from the menu on the left. Enjoy your discovery!</p>
+      <p>{{ $t('home.cta') }}</p>
     </div>
   </div> 
 </template>
