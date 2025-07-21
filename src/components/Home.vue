@@ -4,7 +4,6 @@
 <template>
   <div class="home-container">
     <div class="home-text">
-      <img src="/fuck.png" alt="Logo" class="logo" />
       <h1>🐄 <strong>{{ $t('home.title') }}</strong></h1>
 
       <p>
