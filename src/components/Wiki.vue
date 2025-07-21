@@ -10,20 +10,20 @@ defineProps({
 <template>
   <div class="wiki-page">
       <div class="wiki-intro">
+        <h1>
+          {{ $t('wiki.title') }}
+        </h1>
+
         <p>
-          🐄 <strong>Welcome to the Cow Breed Wiki!</strong>
+          {{ $t('wiki.intro1') }}
         </p>
 
         <p>
-          Cows are among the most diverse and fascinating animals in the agricultural world. Across the globe, there are hundreds of breeds, each with unique characteristics, origins, and purposes — from dairy production to beef farming and even cultural significance.
+          {{ $t('wiki.intro2') }}
         </p>
 
         <p>
-          Below, you’ll find a growing list of cow breeds, complete with detailed profiles to help you learn more about their appearance, temperament, history, and uses. Whether you’re a student, farmer, or simply curious, this wiki is your starting point to better understand the amazing variety of cattle around the world.
-        </p>
-
-        <p>
-          👉 Click on a breed to discover more!
+          {{ $t('wiki.click') }}
         </p>
       </div>
     <ul class="breed-list">
@@ -81,10 +81,10 @@ defineProps({
   align-items: flex-start;
   gap: 0.5rem;
   padding: 1rem;
-  max-width: 1000px;
+  max-width: 1500px;
 }
 .wiki-intro {
-  max-width: 1000px;
+  max-width: 1500px;
   font-size: 1.5rem;
   line-height: 2.8;
   margin-bottom: 2rem;

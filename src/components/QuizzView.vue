@@ -7,9 +7,9 @@
       @next="handleNext"
     />
     <div v-else>
-      <h2>🎉 Quiz Completed!</h2>
-      <p>Your Score: {{ score }} / {{ quiz.length }}</p>
-      <button class="restart-button" @click="restart">Restart</button>
+      <h2>{{ $t('quizzvue.completed') }}</h2>
+      <p>{{ $t('quizzvue.score') }} {{ score }} / {{ quiz.length }}</p>
+      <button class="restart-button" @click="restart">{{ $t('quizzvue.restart') }}</button>
     </div>
   </div>
 </template>

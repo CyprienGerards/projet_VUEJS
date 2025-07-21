@@ -12,25 +12,23 @@ function startQuizz() {
 <template>
   <div class="qizz content">
     <div class="quizz-intro">
-      <p>🧠 <strong>Ready for a challenge?</strong></p>
+      <h1>{{ $t('quizzvue.title') }}</h1>
 
       <p>
-        This short quiz is designed to test your knowledge about cows — from their breeds and behavior to their role in agriculture.
-        Each question has only one correct answer, so read carefully and choose wisely.
+        {{ $t('quizzvue.intro1') }}
       </p>
 
       <p>
-        At the end of the quiz, you’ll receive your score along with some fun facts that might just surprise you.
-        Whether you're a beginner or a cow expert, it's a great way to learn and have fun.
+        {{ $t('quizzvue.intro2') }}
       </p>
 
       <p>
-        👉 Good luck, and enjoy exploring the world of <em>Know Your Cow</em>! 🐄
+        {{ $t('quizzvue.introend') }}
       </p>
     </div>
     <div class="quizz-start">
-      <h3>Ready to begin?</h3>
-      <button class="start-button" type="button"  @click="startQuizz">🎯 Start the Quizz</button>
+      <h3>{{ $t('quizzvue.ready') }}</h3>
+      <button class="start-button" type="button"  @click="startQuizz">{{ $t('quizzvue.button') }}</button>
     </div>
   </div>
 </template>

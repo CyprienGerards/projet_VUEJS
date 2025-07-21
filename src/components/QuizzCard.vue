@@ -14,10 +14,10 @@
     </div>
 
     <p v-if="selected">
-      {{ selected === breed.name ? '✅ Correct!' : '❌ Wrong! The correct answer is ' + breed.name }}
+      {{ selected === breed.name ? $t('quizzvue.correct') : $t('quizzvue.wrong') + ' ' + breed.name }}
     </p>
 
-    <button class="next-button" v-if="selected" @click="next">Next</button>
+    <button class="next-button" v-if="selected" @click="next">{{ $t('quizzvue.next') }}</button>
   </div>
 </template>
 
