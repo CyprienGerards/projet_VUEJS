@@ -1,45 +1,48 @@
 <script setup>
 import { useRoute } from 'vue-router'
 import breedData from '@/data/breeds.json'
+import { useI18n } from 'vue-i18n';
 
 const route = useRoute()
 const breed = breedData[route.params.breed?.toLowerCase()]
+const { locale } = useI18n();
+
 </script>
 
 <template>
   <div v-if="breed" class="breed-page">
-    <h2>{{ breed.name }}</h2>
+    <h2>{{ breed.name[locale] }}</h2>
 
     <div class="image-gallery">
       <img
         v-for="(img, index) in breed.images"
         :key="index"
         :src="img"
-        :alt="breed.name + ' image ' + (index + 1)"
+        :alt="breed.name[locale] + ' image ' + (index + 1)"
         class="breed-image"
       />
     </div>
 
     <ul class="breed-info">
-      <li><strong>Origin:</strong> {{ breed.origin }}</li>
-      <li><strong>Type:</strong> {{ breed.type }}</li>
+      <li><strong>Origin:</strong> {{ breed.origin[locale] }}</li>
+      <li><strong>Type:</strong> {{ breed.type[locale] }}</li>
     </ul>
 
-    <section v-if="breed.traits?.length">
+    <section v-if="breed.traits[locale]?.length">
       <h3>Key Traits</h3>
       <ul>
-        <li v-for="(trait, i) in breed.traits" :key="i">{{ trait }}</li>
+        <li v-for="(trait, i) in breed.traits[locale]" :key="i">{{ trait }}</li>
       </ul>
     </section>
 
     <section class="breed-description">
       <h3>Description</h3>
-      <p>{{ breed.description }}</p>
+      <p>{{ breed.description[locale] }}</p>
     </section>
 
-    <section v-if="breed.history">
+    <section v-if="breed.history[locale]">
       <h3>History</h3>
-      <p>{{ breed.history }}</p>
+      <p>{{ breed.history[locale] }}</p>
     </section>
   </div>
 
