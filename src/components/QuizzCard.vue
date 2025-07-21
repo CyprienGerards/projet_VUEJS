@@ -7,7 +7,7 @@
         v-for="option in options"
         :key="option"
         @click="selectOption(option)"
-        :class="{ correct: selected && option === breed.name, wrong: selected && option !== breed.name }"
+        :class="{ correct: selected && option === breed.name, wrong: selected && option === selected && option !== breed.name }"
       >
         {{ option }}
       </button>
@@ -17,19 +17,25 @@
       {{ selected === breed.name ? '✅ Correct!' : '❌ Wrong! The correct answer is ' + breed.name }}
     </p>
 
-    <button v-if="selected" @click="$emit('next')">Next</button>
+    <button v-if="selected" @click="next">Next</button>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 
-defineProps(['breed', 'options']);
+const { breed, options } = defineProps(['breed', 'options']);
 const emit = defineEmits(['next']);
 
 const selected = ref(null);
+
 function selectOption(option) {
-  if (!selected.value) selected.value = option;
+  if (selected.value) return;
+  selected.value = option;
+}
+function next() {
+  emit('next', selected.value === breed.name); // ✅ envoyer info de bonne réponse
+  selected.value = null; // facultatif si composant est recréé par parent
 }
 </script>
 
