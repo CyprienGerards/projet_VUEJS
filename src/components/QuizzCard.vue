@@ -17,7 +17,7 @@
       {{ selected === breed.name ? '✅ Correct!' : '❌ Wrong! The correct answer is ' + breed.name }}
     </p>
 
-    <button v-if="selected" @click="next">Next</button>
+    <button class="next-button" v-if="selected" @click="next">Next</button>
   </div>
 </template>
 
@@ -44,9 +44,10 @@ function next() {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 .quiz-image {
-  width: 300px;
+  width: 1000px;
   height: auto;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -55,11 +56,16 @@ function next() {
   margin: 0.5rem;
   padding: 0.5rem 1rem;
   font-weight: bold;
+  font-size: 1.5rem;
 }
 .correct {
   background-color: #4caf50;
 }
 .wrong {
   background-color: #f44336;
+}
+.next-button{
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 </style>

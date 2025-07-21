@@ -9,7 +9,7 @@
     <div v-else>
       <h2>🎉 Quiz Completed!</h2>
       <p>Your Score: {{ score }} / {{ quiz.length }}</p>
-      <button @click="restart">Restart</button>
+      <button class="restart-button" @click="restart">Restart</button>
     </div>
   </div>
 </template>
@@ -53,5 +53,10 @@ function restart() {
 .quizz-view {
   text-align: center;
   padding: 2rem;
+  font-size: 1.5rem;
+}
+.restart-button{
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 </style>
