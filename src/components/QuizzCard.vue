@@ -1,8 +1,5 @@
 <script setup>
 import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-
-const { locale } = useI18n();
 
 const { breed, options } = defineProps(['breed', 'options']);
 const emit = defineEmits(['next']);
@@ -35,7 +32,7 @@ function next() {
     </div>
 
     <p v-if="selected">
-      {{ selected === breed.name ? $t('quizzvue.correct') : $t('quizzvue.wrong') + ' ' + breed.name[locale] }}
+      {{ selected === breed.name ? $t('quizzvue.correct') : $t('quizzvue.wrong') + ' ' + breed.name }}
     </p>
 
     <button class="next-button" v-if="selected" @click="next">{{ $t('quizzvue.next') }}</button>

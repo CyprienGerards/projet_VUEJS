@@ -5,8 +5,10 @@ import en from './languages/en.js';
 import fr from './languages/fr.js';
 
 const i18n = createI18n({
-  locale: 'en', // ou 'fr' par défaut si tu préfères
+  legacy: false,//composition API mode not legacy #VUE2
+  locale: 'en', //default
   fallbackLocale: 'en',
+  globalInjection: true,//for $t()
   messages: {
     en,
     fr

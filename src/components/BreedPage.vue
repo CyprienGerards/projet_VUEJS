@@ -6,13 +6,13 @@ import { useI18n } from 'vue-i18n';
 const route = useRoute()
 const breed = breedData[route.params.breed?.toLowerCase()]
 const { locale } = useI18n();
-
+console.log('breed',breed)
 </script>
 
 <template>
   <div v-if="breed" class="breed-page">
     <h2>{{ breed.name[locale] }}</h2>
-
+    
     <div class="image-gallery">
       <img
         v-for="(img, index) in breed.images"
