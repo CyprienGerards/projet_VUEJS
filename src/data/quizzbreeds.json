@@ -1,14 +1,86 @@
 [
   {
+    "name": "Abondance",
+    "image": "/breeds/Abondance.jpg"
+  },
+  {
+    "name": "Angus",
+    "image": "/breeds/Angus.jpg"
+  },
+  {
+    "name": "Aubrac",
+    "image": "/breeds/Aubrac.jpg"
+  },
+  {
+    "name": "Belgian_blue",
+    "image": "/breeds/Belgian_blue.jpg"
+  },
+  {
+    "name": "Blonde_aquitaine",
+    "image": "/breeds/Blonde_aquitaine.jpg"
+  },
+  {
+    "name": "Brahman",
+    "image": "/breeds/Brahman.jpg"
+  },
+  {
+    "name": "Brown_swiss",
+    "image": "/breeds/Brown_swiss.jpg"
+  },
+  {
+    "name": "Charolais",
+    "image": "/breeds/Charolais.jpg"
+  },
+  {
+    "name": "Galloway",
+    "image": "/breeds/Galloway_bull.jpg"
+  },
+  {
+    "name": "Hereford",
+    "image": "/breeds/Hereford.jpg"
+  },
+  {
+    "name": "Highland",
+    "image": "/breeds/Highland.jpg"
+  },
+  {
     "name": "Holstein",
     "image": "/breeds/Holstein.jpg"
   },
+  {
+    "name": "Jersey",
+    "image": "/breeds/Jersey.jpg"
+  }, 
   {
     "name": "Limousin",
     "image": "/breeds/Limousin.jpg"
   },
   {
-    "name": "Highland",
-    "image": "/breeds/Highland.jpg"
+    "name": "Montbeliarde",
+    "image": "/breeds/Montbeliarde.jpg"
+  },
+  {
+    "name": "Normande",
+    "image": "/breeds/Normande.jpg"
+  },
+  {
+    "name": "Salers",
+    "image": "/breeds/Salers.jpg"
+  },
+  {
+    "name": "Shorthorn",
+    "image": "/breeds/Shorthorn.jpg"
+  },
+  {
+    "name": "Simmental",
+    "image": "/breeds/Simmental.jpg"
+  },
+  {
+    "name": "Texas_longhorn",
+    "image": "/breeds/Texas_longhorn.jpg"
+  },
+  {
+    "name": "Vosgienne",
+    "image": "/breeds/Vosgienne.jpg"
   }
 ]
