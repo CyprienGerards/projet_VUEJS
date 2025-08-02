@@ -10,6 +10,7 @@
       <li><router-link to="/">Accueil</router-link></li>
       <li><router-link to="/quizz">Quizz</router-link></li>
       <li><router-link to="/wiki">Wiki</router-link></li>
+      <li><router-link to="/Login">Login</router-link></li>
     </ul>  
     <select v-model="$i18n.locale">
       <option value="en">En</option>
