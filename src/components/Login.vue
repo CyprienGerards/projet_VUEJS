@@ -30,6 +30,8 @@ function login(){
             <label for="password">Password :</label>
             <input v-model="password" id="password" type="password" placeholder="Enter your password">
         </div>
+        <p v-if="error" class="error-message">{{ error }}</p>
+        <p v-if="success" class="success-message">{{ success }}</p>
         <button @click="login">Login</button>
     </div>
 </template>
