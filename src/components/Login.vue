@@ -3,13 +3,19 @@ import { ref } from 'vue';
 
 const email = ref('');
 const password = ref('');
+const error = ref('');
+const success = ref('');
 
 function login(){
+    /*intialisation*/
+    error.value = '';
+    success.value = '';
+    /* error sucess check */
     if (!email.value || !password.value){
-        console.log("please fill all fields")
-    } else {
-        console.log("login successful")
-    }
+        error.value = 'please fill all fields';
+        return;
+    } 
+    success.value = 'login successful';
 }
 </script>
 
