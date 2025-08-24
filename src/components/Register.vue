@@ -22,7 +22,25 @@ function Register(){
             error.value = 'Passwords do not match.';
             return;
         }
+
+    /* stockage user */
+    const newUser ={
+        username: username.value,
+        email :email.value,
+        password: password.value
+    }    
+    localStorage.setItem('user', JSON.stringify(newUser));/**stockage user info in json */
+    /**end registration */
     success.value ='Register successful'; 
+    /*reinitialise*/
+    username.value = '';
+    email.value = '';
+    password.value = '';
+    confirmpassword.value = '';
+}
+
+function getUser() {
+  success.value = JSON.parse(localStorage.getItem('user') || '[]');
 }
 </script>
 <template>
@@ -47,6 +65,7 @@ function Register(){
         <p v-if="error" class="error-message">{{ error }}</p>
         <p v-if="success" class="success-message">{{ success }}</p>
         <button @click="Register">Register</button>
+        <button @click="getUser">User</button>
     </div>
 </template>
 <style>
