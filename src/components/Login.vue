@@ -30,8 +30,9 @@ function login(){
         return;
     }
     success.value = 'login successful';
-    router.push('/'); // rediriger vers la page d’accueil
-
+    setTimeout(() => {
+        router.push('/'); // redirection to home
+    }, 2000);
 }
 </script>
 
