@@ -6,6 +6,10 @@ const password = ref('');
 const error = ref('');
 const success = ref('');
 
+function getUser() {
+  return JSON.parse(localStorage.getItem('user') || '[]');
+}
+
 function login(){
     /*intialisation*/
     error.value = '';
@@ -15,7 +19,14 @@ function login(){
         error.value = 'please fill all fields';
         return;
     } 
+    const user= getUser();
+
+    if (user.email !== email.value || user.password !== password.value){
+        error.value ='Invalid email or password';
+        return;
+    }
     success.value = 'login successful';
+
 }
 </script>
 
