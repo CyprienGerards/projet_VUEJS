@@ -42,6 +42,18 @@ export default {
     successlog : "Login réussi"
   },
   register :{
-
+    title :"Créer un compte",
+    username : "Nom d'utilisateur :",
+    usernameplaceholder : "Entrer un nom d'utilisateur",
+    email : "Email :",
+    emailplaceholder : "Entrer votre email",
+    password : "Mot de passe :",
+    passwordplaceholder : "Entrer votre mot de passe",
+    confirmpassword : "Confirmer le mot de passe :",
+    confirmpasswordplaceholder : "Confirmer votre mot de passe",
+    button : "Enregistrer",
+    errorfield : "Veuillez remplir tous les champs",
+    errorpassword : "Mot de passe non confirmé",
+    successregister : "Compte enregistré"
   }
 } ;

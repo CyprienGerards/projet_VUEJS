@@ -45,6 +45,18 @@ export default {
     successlog : "Login successful"
   },
   register :{
-
+    title :"Create an account",
+    username : "Username :",
+    usernameplaceholder : "Enter a username",
+    email : "Email :",
+    emailplaceholder : "Enter your email",
+    password : "Password :",
+    passwordplaceholder : "Enter your password",
+    confirmpassword : "Confirm Password :",
+    confirmpasswordplaceholder : "Confirm your password",
+    button : "Register",
+    errorfield : "Please fill all fields",
+    errorpassword : "Passwords do not match",
+    successregister : "Account created"
   }
 };
