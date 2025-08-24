@@ -19,14 +19,14 @@ onMounted(() => {
     <h2>Know Your Cow</h2>
     <!-- Username -->
     <div v-if="loggedUser" class="user-info">
-       Account : {{ loggedUser.username}}
+       {{ $t('sidebar.account') }} {{ loggedUser.username}}
     </div>
     <ul>
-      <li><router-link to="/">Accueil</router-link></li>
-      <li><router-link to="/quizz">Quizz</router-link></li>
-      <li><router-link to="/wiki">Wiki</router-link></li>
-      <li><router-link to="/Login">Login</router-link></li>
-      <li><router-link to="/Register">Register</router-link></li>
+      <li><router-link to="/">{{ $t('sidebar.home') }}</router-link></li>
+      <li><router-link to="/quizz">{{ $t('sidebar.quizz') }}</router-link></li>
+      <li><router-link to="/wiki">{{ $t('sidebar.wiki') }}</router-link></li>
+      <li><router-link to="/Login">{{ $t('sidebar.login') }}</router-link></li>
+      <li><router-link to="/Register">{{ $t('sidebar.register') }}</router-link></li>
     </ul>  
     <select v-model="$i18n.locale">
       <option value="en">En</option>

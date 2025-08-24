@@ -10,6 +10,14 @@ export default {
     whyBody : "Parce que les vaches ne sont pas seulement des animaux de ferme - elles font partie de notre environnement, de l'économie et de l'identité culturelle. Ce projet vise à éduquer, sensibiliser et célébrer ces animaux étonnants.",
     cta : '👉 Commencez votre voyage en choisissant une section dans le menu de gauche. Bonne découverte!'
   },
+  sidebar :{
+    home : "Acceuil",
+    quizz : "Quiz",
+    wiki : "Wiki",
+    login : "Connexion",
+    register: "Inscription",
+    account : "Compte"
+  },
   quizzvue :{
     title : '🧠 Prêt pour un défi ?',
     intro1 : "Ce petit quiz est conçu pour tester vos connaissances sur les vaches - de leurs races et de leur comportement à leur rôle dans l'agriculture. Chaque question ne comporte qu'une seule réponse correcte, alors lisez attentivement et choisissez judicieusement.",
@@ -31,15 +39,15 @@ export default {
     click : "👉 Cliquez sur une race pour en savoir plus !",
  },
   login :{
-    title :"Login",
+    title :"Connexion",
     email : "Email :",
     emailplaceholder : "Entrer votre email",
     password : "Mot de passe :",
     passwordplaceholder : "Entrer votre mot de passe",
-    button : "Login",
+    button : "Connexion",
     errorfield : "Veuillez remplir tous les champs",
     errorlog : "Email ou mot de passe invalide",
-    successlog : "Login réussi"
+    successlog : "Connexion réussie"
   },
   register :{
     title :"Créer un compte",

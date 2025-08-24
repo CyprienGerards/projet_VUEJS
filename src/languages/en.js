@@ -11,7 +11,14 @@ export default {
       "Because cows aren't just farm animals — they’re part of our environment, economy, and cultural identity. This project aims to educate, raise awareness, and celebrate these amazing animals.",
     cta: '👉 Start your journey by choosing a section from the menu on the left. Enjoy your discovery!'
   },
-
+  sidebar :{
+    home : "Home",
+    quizz : "Quizz",
+    wiki : "Wiki",
+    login : "Log in",
+    register: "Register",
+    account : "Account"
+  },
   quizzvue :{
     title : '🧠 Ready for a challenge ?',
     intro1 : 'This short quizz is designed to test your knowledge about cows — from their breeds and behavior to their role in agriculture. Each question has only one correct answer, so read carefully and choose wisely.',
