@@ -1,6 +1,6 @@
 # Goal of the project Know Your Cow
 Know Your Cow is an app vue.js where you can learn by a quizz and a wiki every breeds of cow. The quizz will be a little game to discover new breed and prove your knowledge. The wiki will explain each breed with pictures and a descritpion.
-This app add also for me the first project in vue.js and so a good learning project.
+This app is also for me the first project in vue.js and so a good learning project.
 
 # How to Run it :
 
