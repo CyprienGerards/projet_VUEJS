@@ -1,4 +1,8 @@
 <script setup>
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 import { ref } from 'vue';
 
 const email = ref('');
@@ -7,7 +11,7 @@ const error = ref('');
 const success = ref('');
 
 function getUser() {
-  return JSON.parse(localStorage.getItem('user') || '[]');
+  return JSON.parse(localStorage.getItem('user') || '{}');
 }
 
 function login(){
@@ -26,6 +30,7 @@ function login(){
         return;
     }
     success.value = 'login successful';
+    router.push('/'); // rediriger vers la page d’accueil
 
 }
 </script>
