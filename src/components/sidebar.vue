@@ -1,4 +1,15 @@
 <script setup>
+import { ref, onMounted } from 'vue';
+
+const loggedUser = ref(null);
+
+onMounted(() => {
+  const user = JSON.parse(localStorage.getItem('loggedUser'));
+  if (user) {
+    loggedUser.value = user;
+  }
+});
+
 </script>
 <template>
   <aside class="sidebar">
@@ -6,6 +17,10 @@
       <img src="@/assets/logo_texte.svg" alt="Logo" class="logo" />
     </div>
     <h2>Know Your Cow</h2>
+    <!-- Username -->
+    <div v-if="loggedUser" class="user-info">
+       Account : {{ loggedUser.username}}
+    </div>
     <ul>
       <li><router-link to="/">Accueil</router-link></li>
       <li><router-link to="/quizz">Quizz</router-link></li>
@@ -44,6 +59,15 @@
 .logo {
   max-width: 200px;    /* 🔧 shrink logo */
   height: auto;
+}
+
+.user-info {
+  margin: 1rem 0;
+  font-weight: bold;
+  color: white;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 h2 {

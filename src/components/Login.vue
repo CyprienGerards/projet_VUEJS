@@ -30,6 +30,9 @@ function login(){
         return;
     }
     success.value = 'login successful';
+
+    localStorage.setItem('loggedUser', JSON.stringify(user));// stock user logged
+
     setTimeout(() => {
         router.push('/'); // redirection to home
     }, 2000);
