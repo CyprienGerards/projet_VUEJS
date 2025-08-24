@@ -20,16 +20,16 @@ function login(){
     success.value = '';
     /* error sucess check */
     if (!email.value || !password.value){
-        error.value = 'please fill all fields';
+        error.value = $t('login.errorfield') ;
         return;
     } 
     const user= getUser();
 
     if (user.email !== email.value || user.password !== password.value){
-        error.value ='Invalid email or password';
+        error.value = $t('login.errorlog');
         return;
     }
-    success.value = 'login successful';
+    success.value = $t('login.successlog');
 
     localStorage.setItem('loggedUser', JSON.stringify(user));// stock user logged
 
@@ -41,18 +41,18 @@ function login(){
 
 <template>
     <div>
-        <h1>Login</h1>
+        <h1>{{ $t('login.title') }}</h1>
         <div class="form-inputs">
-            <label for="email">Email :</label>
-            <input v-model="email" id="email" type="email" placeholder="Enter your email">
+            <label for="email">{{ $t('login.email') }}</label>
+            <input v-model="email" id="email" type="email" :placeholder="$t('login.emailplaceholder')">
         </div>
         <div class="form-inputs">
-            <label for="password">Password :</label>
-            <input v-model="password" id="password" type="password" placeholder="Enter your password">
+            <label for="password">{{ $t('login.password') }}</label>
+            <input v-model="password" id="password" type="password" :placeholder="$t('login.passwordplaceholder')">
         </div>
         <p v-if="error" class="error-message">{{ error }}</p>
         <p v-if="success" class="success-message">{{ success }}</p>
-        <button @click="login">Login</button>
+        <button @click="login">{{ $t('login.button') }}</button>
     </div>
 </template>
 <style>

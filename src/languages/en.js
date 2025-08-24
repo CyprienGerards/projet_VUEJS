@@ -3,7 +3,7 @@ export default {
     title: 'Welcome to Know Your Cow!',
     intro: 'is an interactive app designed to help you explore the fascinating world of cows. Whether you are into farming, curious about nature, or just here to learn something new — you are in the right place!',
     hereYouFindTitle: 'Here, you’ll find:',
-    hereYouFindList1: '🧠 An educational quiz to test your knowledge of breeds, diet, and traits.',
+    hereYouFindList1: '🧠 An educational quizz to test your knowledge of breeds, diet, and traits.',
     hereYouFindList2: '📚 A full Wiki with detailed pages on various cow breeds, origins, and uses.',
     hereYouFindList3:'🐮 A simple, fun interface that makes learning engaging and enjoyable.',
     whyTitle: 'Why this project?',
@@ -32,5 +32,19 @@ export default {
     intro1: "Cows are among the most diverse and fascinating animals in the agricultural world. Across the globe, there are hundreds of breeds, each with unique characteristics, origins, and purposes — from dairy production to beef farming and even cultural significance.",
     intro2: "Below, you’ll find a growing list of cow breeds, complete with detailed profiles to help you learn more about their appearance, temperament, history, and uses. Whether you’re a student, farmer, or simply curious, this wiki is your starting point to better understand the amazing variety of cattle around the world.",
     click: "👉 Click on a breed to discover more!",
+  },
+  login :{
+    title :"Login",
+    email : "Email :",
+    emailplaceholder : "Enter your email",
+    password : "Password :",
+    passwordplaceholder : "Enter your password",
+    button : "Login",
+    errorfield : "Please fill all fields",
+    errorlog : "Invalid email or password",
+    successlog : "Login successful"
+  },
+  register :{
+
   }
 };
