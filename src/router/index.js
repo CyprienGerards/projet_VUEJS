@@ -23,6 +23,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition){
+     //if (to.path.startsWith('/wiki')) {
+        return{ top: 0 };
+     //}
+    // return savedPosition || false;
+  }
 })
 
 export default router

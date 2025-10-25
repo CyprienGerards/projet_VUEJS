@@ -1,4 +1,5 @@
 <script setup>
+import{ watch, onMounted } from'vue' //Scrollup + watch when change '/wiki/:breed'
 import { useRoute } from 'vue-router'
 import breedData from '@/data/breeds.json'
 import { useI18n } from 'vue-i18n';
@@ -7,6 +8,16 @@ const route = useRoute()
 const breed = breedData[route.params.breed?.toLowerCase()]
 const { locale } = useI18n();
 console.log('breed',breed)
+
+// scroll on intial mount
+onMounted(()=>{
+  window.scrollTo(0,0)
+})
+
+//watch breed param and scroll when it changes
+watch(()=>route.params.breed, ()=>{
+  window.scrollTo(0,0)
+})
 </script>
 
 <template>
