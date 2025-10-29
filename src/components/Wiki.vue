@@ -28,13 +28,13 @@
       
       <li><router-link to="/wiki/aubrac">Aubrac</router-link> </li>
       
-      <li><router-link to="/wiki/belgian-blue">Belgian Blue</router-link> </li>
+      <li><router-link to="/wiki/belgian_blue">Belgian Blue</router-link> </li>
       
-      <li><router-link to="/wiki/blonde-d-aquitaine">Blonde d'aquitaine</router-link> </li>
+      <li><router-link to="/wiki/blonde_d_aquitaine">Blonde d'aquitaine</router-link> </li>
       
       <li><router-link to="/wiki/brahman">Brahman</router-link> </li>
       
-      <li><router-link to="/wiki/brown-swiss">Brown Swiss</router-link> </li>
+      <li><router-link to="/wiki/brown_swiss">Brown Swiss</router-link> </li>
       
       <li><router-link to="/wiki/charolais">Charolais</router-link> </li>
 
@@ -60,7 +60,7 @@
       
       <li><router-link to="/wiki/simmental">Simmental</router-link> </li>
       
-      <li><router-link to="/wiki/texas-longhorn">Texas Longhorn</router-link> </li>
+      <li><router-link to="/wiki/texas_longhorn">Texas Longhorn</router-link> </li>
       
       <li><router-link to="/wiki/vosgienne">Vosgienne</router-link> </li>
     </ul>
