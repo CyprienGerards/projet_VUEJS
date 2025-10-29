@@ -1,7 +1,7 @@
 <script setup>
 import{ watch, onMounted } from'vue' //Scrollup + watch when change '/wiki/:breed'
 import { useRoute } from 'vue-router'
-import breedData from '@/data/breeds.json'
+import breedData from '@/data/breeds.js'
 import { useI18n } from 'vue-i18n';
 
 const route = useRoute()
