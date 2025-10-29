@@ -11,6 +11,7 @@ export default {
       "Because cows aren't just farm animals — they’re part of our environment, economy, and cultural identity. This project aims to educate, raise awareness, and celebrate these amazing animals.",
     cta: '👉 Start your journey by choosing a section from the menu on the left. Enjoy your discovery!'
   },
+
   sidebar :{
     home : "Home",
     quizz : "Quizz",
@@ -19,6 +20,7 @@ export default {
     register: "Register",
     account : "Account"
   },
+
   quizzvue :{
     title : '🧠 Ready for a challenge ?',
     intro1 : 'This short quizz is designed to test your knowledge about cows — from their breeds and behavior to their role in agriculture. Each question has only one correct answer, so read carefully and choose wisely.',
@@ -40,6 +42,16 @@ export default {
     intro2: "Below, you’ll find a growing list of cow breeds, complete with detailed profiles to help you learn more about their appearance, temperament, history, and uses. Whether you’re a student, farmer, or simply curious, this wiki is your starting point to better understand the amazing variety of cattle around the world.",
     click: "👉 Click on a breed to discover more!",
   },
+
+  breedpage:{
+    origin:"Origin:",
+    type:"Type:",
+    keytraits :"Key Traits",
+    description :"Description",
+    history:"History",
+    error : "❌ Breed not found."
+  },
+
   login :{
     title :"Login",
     email : "Email :",
@@ -51,6 +63,7 @@ export default {
     errorlog : "Invalid email or password",
     successlog : "Login successful"
   },
+
   register :{
     title :"Create an account",
     username : "Username :",

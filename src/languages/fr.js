@@ -10,6 +10,7 @@ export default {
     whyBody : "Parce que les vaches ne sont pas seulement des animaux de ferme - elles font partie de notre environnement, de l'économie et de l'identité culturelle. Ce projet vise à éduquer, sensibiliser et célébrer ces animaux étonnants.",
     cta : '👉 Commencez votre voyage en choisissant une section dans le menu de gauche. Bonne découverte!'
   },
+
   sidebar :{
     home : "Acceuil",
     quizz : "Quiz",
@@ -18,6 +19,7 @@ export default {
     register: "Inscription",
     account : "Compte"
   },
+
   quizzvue :{
     title : '🧠 Prêt pour un défi ?',
     intro1 : "Ce petit quiz est conçu pour tester vos connaissances sur les vaches - de leurs races et de leur comportement à leur rôle dans l'agriculture. Chaque question ne comporte qu'une seule réponse correcte, alors lisez attentivement et choisissez judicieusement.",
@@ -32,12 +34,23 @@ export default {
     restart : 'Recommencer',
     next : 'Suivant'
   },
+
   wiki :{
     title : "🐄 Bienvenue sur le wiki des races de vaches !",
     intro1 : "Les vaches comptent parmi les animaux les plus divers et les plus fascinants du monde agricole. À travers le monde, il existe des centaines de races, chacune ayant des caractéristiques, des origines et des objectifs uniques - de la production laitière à l'élevage bovin et même une signification culturelle.",
     intro2 : "Vous trouverez ci-dessous une liste croissante de races de vaches, avec des profils détaillés pour vous aider à en savoir plus sur leur apparence, leur tempérament, leur histoire et leurs utilisations. Que vous soyez étudiant, agriculteur ou simplement curieux, ce wiki est votre point de départ pour mieux comprendre l'étonnante variété de bovins dans le monde.",
     click : "👉 Cliquez sur une race pour en savoir plus !",
  },
+
+ breedpage:{
+    origin:"Origine:",
+    type:"Type:",
+    keytraits :"Traits Clés",
+    description :"Description",
+    history:"Histoire",
+    error : "❌ Race non trouvée."
+  },
+
   login :{
     title :"Connexion",
     email : "Email :",
@@ -49,6 +62,7 @@ export default {
     errorlog : "Email ou mot de passe invalide",
     successlog : "Connexion réussie"
   },
+
   register :{
     title :"Créer un compte",
     username : "Nom d'utilisateur :",

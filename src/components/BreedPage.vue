@@ -35,30 +35,30 @@ watch(()=>route.params.breed, ()=>{
     </div>
 
     <ul class="breed-info">
-      <li><strong>Origin:</strong> {{ breed.origin[locale] }}</li>
-      <li><strong>Type:</strong> {{ breed.type[locale] }}</li>
+      <li><strong>{{$t('breedpage.origin')}}</strong> {{ breed.origin[locale] }}</li>
+      <li><strong>{{$t('breedpage.type')}}</strong> {{ breed.type[locale] }}</li>
     </ul>
 
     <section v-if="breed.traits[locale]?.length">
-      <h3>Key Traits</h3>
+      <h3>{{$t('breedpage.keytraits')}}</h3>
       <ul>
         <li v-for="(trait, i) in breed.traits[locale]" :key="i">{{ trait }}</li>
       </ul>
     </section>
 
     <section class="breed-description">
-      <h3>Description</h3>
+      <h3>{{$t('breedpage.description')}}</h3>
       <p>{{ breed.description[locale] }}</p>
     </section>
 
     <section v-if="breed.history[locale]">
-      <h3>History</h3>
+      <h3>{{$t('breedpage.history')}}</h3>
       <p>{{ breed.history[locale] }}</p>
     </section>
   </div>
 
   <div v-else>
-    <p>❌ Breed not found.</p>
+    <p>{{$t('breedpage.error')}}</p>
   </div>
 </template>
 
