@@ -15,7 +15,7 @@
 </template>
 
 <script setup>
-import { ref , computed} from 'vue';
+import { ref } from 'vue';
 import quizBreeds from '@/data/quizzbreeds.json';
 import QuizCard from '@/components/QuizzCard.vue';
 
@@ -42,11 +42,32 @@ function handleNext(isCorrect) {
     score.value++;
   }
   current.value++;
+  //log generation
+  if (current.value >= quiz.length) {
+  logQuizResult();
+  }
 }
 
 function restart() {
   location.reload();
 }
+
+function logQuizResult(){
+  const logs = JSON.parse(localStorage.getItem('quizLogs') || '[]');
+
+  const newEntry = {
+    date: new Date().toISOString(),
+    score: score.value,
+    total: quiz.length,
+    percentage: Math.round((score.value / quiz.length) * 100),
+    //language: locale.value || 'en', 
+    user: JSON.parse(localStorage.getItem('loggedUser'))?.email || 'guest'
+  };
+
+  logs.push(newEntry);
+  localStorage.setItem('quizLogs', JSON.stringify(logs));
+}
+
 </script>
 
 <style scoped>
