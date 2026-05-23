@@ -14,7 +14,7 @@ onMounted(() => {
 <template>
   <aside class="sidebar">
     <div class="logo-wrapper">
-      <img src="@/assets/logo_texte.svg" alt="Logo" class="logo" />
+      <img src="@/assets/Logo_texte.svg" alt="Logo" class="logo" />
     </div>
     <h2>Know Your Cow</h2>
     <!-- Username -->
